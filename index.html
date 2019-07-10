@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <Title>Mario Kart Item Simulator</Title>
+    <link rel="stylesheet" href='style.css'>
+  </head>
+
+  <body>
+
+    <div id='main'>
+      
+      <!-- Heading and Introduction -->
+      <div id='intro'>
+        <h1>Mario Kart Item Simulator</h1>
+        <p>This is a simplified simulator for the item boxes in Mario Kart. The item you will recieve from an item box is based on your current position in the race and the respective probabilities set for each position.</p>
+      </div>
+      <hr>
+
+      <!-- Input Position -->
+      <div id='input-position'>
+        <div>
+          <label for='position'>Enter your current position in the race (1-12):</label>
+          <input type='number' min='1' max='12' step='1' id='position'>
+        </div>
+        <div><button type="button" class='sim1'> <img src='images/mario-kart-item-box.png'><br>Simulate!</button>
+        <button type="button" id='sim10'> <img src='images/mario-kart-item-box.png'><br>Simulate 10!</button></div>
+      </div>
+      <hr>
+
+      <br>
+
+      <!-- Image of just generated item -->
+      <br>
+      <div id='generated'>
+        <div><img id='just-generated' src='images/mario-kart-item-box.png'></div>
+        <p id='generate-caption'>Item will appear here</p>
+      </div>
+
+      <hr>
+
+      <!-- Item Count and Display -->
+      <div class="flex-container">
+          <div><img src='images/Banana.png' alt='Banana'><br>Banana: <span id='banana'>0</span></div>
+          <div><img src='images/Green_Shell.png' alt='Green Shell'><br>Green Shell: <span id='shell'>0</span></div>
+          <div><img src='images/Star.png' alt='Star'><br>Star: <span id='star'>0</span></div>
+          <div><img src='images/Golden_Mushroom.png' alt='Goldne Mushroom'><br>Golden Mushroom: <span id='mushroom'>0</span></div>
+          <div><img src='images/Bullet_Bill.png' alt='Bullet Bill'><br>Bullet Bill: <span id='bullet'>0</span></div>
+      </div>
+
+      <!-- Picture of every generated item -->
+      <div id='item-list'></div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src='main.js'></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,99 @@
+body {
+    text-align: center;
+    padding: 30px 100px;
+    background-color: rgb(255, 255, 255);
+}
+
+#main {
+    width: 800px;
+    margin: auto;
+    padding: 30px 50px;
+    border-radius: 20px;
+    background-color: rgb(246, 255, 235);
+}
+
+hr {
+    width: 700px;
+}
+
+
+/* input box */
+#input-position {
+    display: flex;
+    width: 590px;
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sim1 {
+    background-image: linear-gradient(rgb(0, 255, 157), rgb(255, 213, 213));
+    border-radius: 5px;
+    padding: 5px 7px;
+    border: 1px outset;
+}
+
+.sim1:active {
+    background-image: linear-gradient(rgb(255, 213, 213), rgb(0, 255, 157));
+}
+
+#sim10 {
+    background-image: linear-gradient(rgb(0, 255, 40), rgb(255, 150, 213));
+    border-radius: 5px;
+    padding: 5px 7px;
+    border: 1px outset;
+}
+
+#sim10:active {
+    background-image: linear-gradient(rgb(255, 150, 213), rgb(0, 255, 40));
+}
+
+
+/* Generated Item */
+#generated {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 40px;
+    justify-content: center;
+    border: 1px solid rgb(165, 160, 160);
+}
+
+#just-generated {
+    height: 100px
+}
+
+
+/* Item Count */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+img {
+    height: 50px;
+}
+
+input {
+    margin: 10px;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+/* Count with images */
+.counted-images {
+    border: 1px solid black;
+    height: 30px;
+    margin: 3px;
+    padding: 5px;
+}
